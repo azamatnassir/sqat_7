@@ -1,0 +1,16 @@
+{
+  "User": {
+    "id": { "int": {} },
+    "name": { "string": {} },
+    "pets": {
+      "hasMany": "Pets"
+    }
+  },
+  "Pet": {
+    "id": { "int": {} },
+    "type": { "string": {} },
+    "users": {
+      "belongsTo": "User"
+    }
+  }
+}
