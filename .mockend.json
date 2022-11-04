@@ -3,13 +3,13 @@
     "id": { "int": {} },
     "name": { "string": {} },
     "pets": {
-      "hasMany": "Pets"
+      "hasMany": "Pet"
     }
   },
   "Pet": {
     "id": { "int": {} },
     "type": { "string": {} },
-    "users": {
+    "user": {
       "belongsTo": "User"
     }
   }
