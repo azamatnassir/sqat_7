@@ -1,14 +1,32 @@
 {
   "User": {
     "id": { "int": { "min": 0, "max": 1000000 } },
-    "name": { "string": {} },
+    "name": { "string": [
+      "Ryan",
+      "Rida",
+      "Adam",
+      "Jacob",
+      "Aby",
+      "Sarah",
+      "John"
+    ]
+  },
     "pets": {
       "hasMany": "Pet"
     }
   },
   "Pet": {
     "id": { "int": { "min": 0, "max": 1000000 } },
-    "type": { "string": {} },
+    "type": { "string": [
+      "Dog",
+      "Cat",
+      "Hamster",
+      "Mouse",
+      "Goldfish"
+      "Parrot",
+      "Turtle",
+      "Guinea pig"
+    ] },
     "user": {
       "belongsTo": "User"
     }
